@@ -12,7 +12,7 @@ export function Footer() {
           <RegularText size="s" width={240}>Telefone (11) 1234 4321 <br></br> WhatsApp (11) 12122 3131</RegularText>
         </Contacts>
         <Social>
-          <RegularText weight="bold" size="s">-SIGA-NOS-</RegularText> 
+          <RegularText width={100} weight="bold" size="s">-SIGA-NOS-</RegularText> 
           <div>
             <LinkedinLogo size={24} />
             <InstagramLogo size={24} />

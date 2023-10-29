@@ -2,19 +2,16 @@ import styled from "styled-components";
 import { ButtonBaseStyle } from "../../styles";
 
 export const SlidersContainer = styled.section`
+  --swiper-theme-color: ${({theme}) => theme.colors["brand-gold-400"]} !important;
 
   video {
     width: 100%; 
     height: 580px;
     object-fit: cover;
   }
-  
-  .swiper-button-prev, .swiper-button-next {
-    color: ${({theme}) => theme.colors["brand-gold-400"]};
-  }
 
-  .swiper-pagination-bullet {
-    background-color: ${({theme}) => theme.colors["brand-gold-400"]};
+  button {
+    color: ${({theme}) => theme.colors["brand-red-700"]};
   }
 
   @media (max-width: 1100px){
@@ -251,7 +248,7 @@ export const LoveDescription = styled.div`
   }
 
   @media (max-width: ${({theme}) => theme.media.mobile}) {
-    width: 60vw;
+    width: 65%;
 
     h1 {
       font-size: 1rem;
