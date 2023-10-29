@@ -88,6 +88,7 @@ export const NavMenuToggle = styled.button`
   display: none;
   border: 0;
   background-color: transparent;
+  color: ${({theme}) => theme.colors["brand-red-700"]};
 
   @media (max-width: ${({theme}) => theme.media.tablet}){
     display: block;
