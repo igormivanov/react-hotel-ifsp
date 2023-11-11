@@ -57,7 +57,7 @@ export function Sliders(){
                   </SpaContainer> 
                   ) : item.tag === 'natal' ? (
                     <div>
-                      <video src={videoNatal} autoPlay loop muted controls={false}/>
+                      <video src={videoNatal} autoPlay loop muted controls={false} disablePictureInPicture/>
                       <NatalDescription>
                         <h1>Natal em Salto</h1>
                         <p>Vivemos um tempo mágico.</p>
@@ -70,7 +70,7 @@ export function Sliders(){
 
                   ) : item.tag === 'amor' ? (
                     <div>
-                      <video src={videoCasal} autoPlay loop style={{ filter: "brightness(80%)" }} muted controls={false}/>
+                      <video src={videoCasal} autoPlay loop style={{ filter: "brightness(80%)" }} muted controls={false} disablePictureInPicture/>
                       <LoveDescription>
                         <h1>Nada melhor que poder desfrutar de bons momentos com quem você ama!</h1>
                         <p>Te esperamos no WhatsApp para conversar e oferecer as melhores dicas, períodos e tarifas para sua viagem.</p>
