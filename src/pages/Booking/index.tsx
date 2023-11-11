@@ -95,6 +95,10 @@ export function BookingPage(){
 
   const isDesktopSize = useMediaQuery({ query: `(min-width: ${media.tablet})` });
 
+  const handleChange = (item: any) => {
+    setRange([{ ...item.selection, key: "selection" }]);
+  };
+
   return (
     <FormProvider {...searchBookingForm}>
       <BookingPageContainer className="container">
@@ -130,7 +134,7 @@ export function BookingPage(){
           </SingleHotelInputs>
           <CalendarContainer>
             <DateRange
-                onChange={(item) => setRange([item.selection])}
+                onChange={handleChange}
                 editableDateInputs={false}
                 moveRangeOnFirstSelection={false}
                 months={2}
