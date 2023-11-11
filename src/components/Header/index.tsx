@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { BookButton, HeaderButtonsContainer, HeaderContainer, NavMenuToggle } from './styles';
-import { List } from "phosphor-react";
+import { AiOutlineMenu } from "react-icons/ai";
 import logo from "../../assets/logo.svg"
 
 interface HeaderProps {
@@ -32,7 +32,7 @@ export function Header({ setMenuIsVisible } : HeaderProps){
             </BookButton>
           </Link>
           <NavMenuToggle>
-            <List size={24} onClick={() => setMenuIsVisible(true)}/>
+            <AiOutlineMenu size={24} onClick={() => setMenuIsVisible(true)}/>
           </NavMenuToggle>
         </div>
       </div>

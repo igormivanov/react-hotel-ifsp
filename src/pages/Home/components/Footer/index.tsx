@@ -1,6 +1,6 @@
 import { RegularText } from "../../../../components/Typography";
 import { Contacts, FooterCopyright, FooterContainer, NavList, Social} from "./styles";
-import {LinkedinLogo, InstagramLogo, FacebookLogo, Copyright} from 'phosphor-react'
+import {AiFillLinkedin, AiOutlineInstagram, AiFillFacebook, AiOutlineCopyrightCircle} from 'react-icons/ai'
 
 export function Footer() {
   return (
@@ -14,9 +14,9 @@ export function Footer() {
         <Social>
           <RegularText width={100} weight="bold" size="s">-SIGA-NOS-</RegularText> 
           <div>
-            <LinkedinLogo size={24} />
-            <InstagramLogo size={24} />
-            <FacebookLogo size={24} />
+            <AiFillLinkedin size={24} />
+            <AiOutlineInstagram size={24} />
+            <AiFillFacebook size={24} />
           </div>
         </Social>
         <NavList>
@@ -29,7 +29,7 @@ export function Footer() {
             <li><a href="">Login</a></li>
           </ul>
         </NavList>
-        <FooterCopyright><Copyright/>2023 - Hotel IFSP - Todos os direitos reservados | Desenvolvido por alunos</FooterCopyright>
+        <FooterCopyright><AiOutlineCopyrightCircle/>2023 - Hotel IFSP - Todos os direitos reservados | Desenvolvido por alunos</FooterCopyright>
       </div>
     </FooterContainer>
   )

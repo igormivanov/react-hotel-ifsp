@@ -1,4 +1,4 @@
-import { X } from "phosphor-react";
+import { AiOutlineClose } from "react-icons/ai";
 import { MenuMobileContainer } from "./styles";
 import {useEffect} from 'react'
 import logo from "../../assets/logo.svg"
@@ -17,7 +17,7 @@ export function MenuMobile({ menuIsVisible, setMenuIsVisible}: MenuMobileProps) 
 
   return (
     <MenuMobileContainer isVisible={menuIsVisible}>
-      <X size={24} onClick={() => setMenuIsVisible(false)}/>
+      <AiOutlineClose size={24} onClick={() => setMenuIsVisible(false)}/>
       <img src={logo} width="123" height="66"/>
       <nav>
         

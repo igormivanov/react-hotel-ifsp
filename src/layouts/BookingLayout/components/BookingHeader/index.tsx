@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from '../../../../assets/logo.svg'
-import { User } from 'phosphor-react'
+import { AiOutlineUser } from 'react-icons/ai'
 import { BookingNav, HeaderContainer, LoginButton } from "./styles";
 import { RegularText } from "../../../../components/Typography";
 
@@ -18,7 +18,7 @@ export function BookingHeader() {
           </div>
           <Link to="/login">
             <LoginButton>
-              <User size={16} />
+              <AiOutlineUser size={16} />
               A minha conta
             </LoginButton>
           </Link>

@@ -6,7 +6,7 @@ export function LoginPage(){
     <LoginContainer>
       <LoginHeader/>
         <div className="container">
-          teste
+          
         </div>
     </LoginContainer>
   )

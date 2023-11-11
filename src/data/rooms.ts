@@ -11,19 +11,19 @@ export const roomTypes = [
         id: 1,
         name: 'breakfast',
         description: 'Café da manhã',
-        icon: 'Coffee' 
+        icon: 'AiOutlineCoffee' 
       },
       { 
         id: 2,
         name: 'parking',
         description: 'Estacionamento',
-        icon: 'CarSimple' 
+        icon: 'AiOutlineCar' 
       },
       { 
         id: 3,
         name: 'occupantLimitTag',
         description: 'Ocup.max',
-        icon: 'PersonSimpleWalk'
+        icon: 'AiOutlineTeam'
       },
       
     ]
@@ -40,19 +40,19 @@ export const roomTypes = [
         id: 1,
         name: 'breakfast',
         description: 'Café da manhã',
-        icon: 'Coffee' 
+        icon: 'AiOutlineCoffee' 
       },
       { 
         id: 2,
         name: 'parking',
         description: 'Estacionamento',
-        icon: 'CarSimple' 
+        icon: 'AiOutlineCar' 
       },
       { 
         id: 3,
         name: 'occupantLimitTag',
         description: 'Ocup.max',
-        icon: 'PersonSimpleWalk'
+        icon: 'AiOutlineTeam'
       }, 
     ]
   },
@@ -68,19 +68,19 @@ export const roomTypes = [
         id: 1,
         name: 'breakfast',
         description: 'Café da manhã',
-        icon: 'Coffee' 
+        icon: 'AiOutlineCoffee' 
       },
       { 
         id: 2,
         name: 'parking',
         description: 'Estacionamento',
-        icon: 'CarSimple' 
+        icon: 'AiOutlineCar' 
       },
       { 
         id: 3,
         name: 'occupantLimitTag',
         description: 'Ocup.max',
-        icon: 'PersonSimpleWalk'
+        icon: 'AiOutlineTeam'
       }, 
     ]
   },
@@ -96,19 +96,19 @@ export const roomTypes = [
         id: 1,
         name: 'breakfast',
         description: 'Café da manhã',
-        icon: 'Coffee' 
+        icon: 'AiOutlineCoffee' 
       },
       { 
         id: 2,
         name: 'parking',
         description: 'Estacionamento',
-        icon: 'CarSimple' 
+        icon: 'AiOutlineCar' 
       },
       { 
         id: 3,
         name: 'occupantLimitTag',
         description: 'Ocup.max',
-        icon: 'PersonSimpleWalk'
+        icon: 'AiOutlineTeam'
       }, 
     ]
   },

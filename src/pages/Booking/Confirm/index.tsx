@@ -5,7 +5,8 @@ import { RoomTypeCard } from "../components/RoomTypeCard";
 
 import { roomTypes } from "../../../data/rooms";
 import { OrderDetails } from "../components/OrderDetails";
-import {  ArrowLeft, CaretDown, CaretUp } from "phosphor-react";
+import { AiFillCaretDown, AiFillCaretUp,} from "react-icons/ai";
+import { BsArrowLeft } from 'react-icons/bs'
 import { Link } from "react-router-dom";
 import { formatMoney } from "../../../utils/formatMoney";
 import { OrderDetailsMobile } from "../components/OrderDetailsMobile";
@@ -24,8 +25,8 @@ export function ConfirmPage(){
       <OrderDetailsMobileStyle>
         <div>
           {menuIsVisible === false ? 
-          <CaretUp size={16} onClick={() => setMenuIsVisible(prevState => !prevState)}/> : 
-          <CaretDown size={16} onClick={() => setMenuIsVisible(prevState => !prevState)}/>
+          <AiFillCaretUp size={16} onClick={() => setMenuIsVisible(prevState => !prevState)}/> : 
+          <AiFillCaretDown size={16} onClick={() => setMenuIsVisible(prevState => !prevState)}/>
           }
           <RegularText width="auto" $textAlign="auto" color="#518209">
             <span className="priceSymbol">R$</span>
@@ -41,7 +42,7 @@ export function ConfirmPage(){
         <RoomTypeSelection>
           <TopCard>
             <Link to="/booking">
-              <ArrowLeft/>
+              <BsArrowLeft/>
               Voltar
             </Link>
             <TitleText $textAlign="start" size="s" weight="bold">Selecione um quarto</TitleText>

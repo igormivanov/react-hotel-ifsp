@@ -1,4 +1,4 @@
-import { Copyright, EnvelopeSimple, Phone } from "phosphor-react";
+import { AiOutlineCopyrightCircle, AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { RegularText } from "../../../../components/Typography";
 import { BookingFooterContainer } from "./styles";
 
@@ -6,19 +6,19 @@ export function BookingFooter(){
   return (
     <BookingFooterContainer>
       <div>
-        <Copyright/>
+        <AiOutlineCopyrightCircle/>
         <RegularText size="xs" color="#FFFFFF" width="auto">
           2023 Hotel IFSP. Todos os direitos reservados.
         </RegularText>
       </div>
       <div>
-        <EnvelopeSimple/>
+        <AiOutlineMail/>
         <RegularText size="xs" color="#FFFFFF" width="auto">
           reservas@hotelifsp.com.br
         </RegularText>
       </div>
       <div>
-        <Phone/>
+        <AiOutlinePhone/>
         <RegularText size="xs" color="#FFFFFF" width="auto">
           (11) 1234 4321
         </RegularText>

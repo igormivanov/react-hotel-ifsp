@@ -1,5 +1,5 @@
 import { differenceInDays } from "date-fns";
-import { Trash } from "phosphor-react";
+import { AiOutlineDelete } from "react-icons/ai";
 import { RegularText } from "../../../../components/Typography";
 import { formatMoney } from "../../../../utils/formatMoney";
 import { SelectedRoomsCard, SelectedRoomsContainer, TrashButton } from "./styles";
@@ -22,7 +22,7 @@ export function SelectedRooms(){
           <SelectedRoomsCard key={room.id}>
             <div>
               <RegularText color="#250D08" width="auto" $textAlign="auto" size="m">{room.name}</RegularText>
-              <TrashButton onClick={() => handleRemoveRoomType(room.id)} ><Trash size={16}/></TrashButton>
+              <TrashButton onClick={() => handleRemoveRoomType(room.id)} ><AiOutlineDelete size={16}/></TrashButton>
             </div>
             <div>
               <RegularText width="auto" $textAlign="auto" size="s">

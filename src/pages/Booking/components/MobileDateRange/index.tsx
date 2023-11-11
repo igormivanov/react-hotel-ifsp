@@ -21,10 +21,14 @@ export function MobileDateRange({ range, setRange} : MobileDateRangeProps){
 
   const isMobileSized = useMediaQuery({ query: `(max-width: ${media.tablet}) and (min-width: 767px)` });
 
+  const handleChange = (item: any) => {
+    setRange([{ ...item.selection, key: "selection" }]);
+  };
+
   return (
     <MobileDateRangeContainer>
       <DateRange
-        onChange={item => setRange([item.selection])}
+        onChange={handleChange}
         editableDateInputs={true}
         moveRangeOnFirstSelection={false}
         ranges={range}
@@ -35,7 +39,11 @@ export function MobileDateRange({ range, setRange} : MobileDateRangeProps){
         weekdayDisplayFormat="EEEEEE"
         monthDisplayFormat="MMMM yyyy"
         minDate={new Date()}
-        rangeColors={[colors["brand-gold-300"],colors["brand-gold-400"], colors["brand-red-500"]]}
+        rangeColors={[
+          colors["brand-gold-300"],
+          colors["brand-gold-400"], 
+          colors["brand-red-500"]
+        ]}
       />
     </MobileDateRangeContainer>
   )

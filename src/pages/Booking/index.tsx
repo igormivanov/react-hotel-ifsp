@@ -14,7 +14,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useNavigate } from "react-router-dom";
 import { useBooking } from "../../hooks/useBooking";
 import { SearchBookingInput } from "./components/SearchBookinInputs";
-import { ArrowRight, CheckCircle, Lock, Timer } from "phosphor-react";
+import { AiOutlineCheckCircle, AiOutlineLock, AiOutlineClockCircle } from "react-icons/ai";
+import { BsArrowRight } from 'react-icons/bs'
 import { useTheme } from "styled-components";
 import { MobileDateRange } from "./components/MobileDateRange";
 import { useMediaQuery } from "react-responsive";
@@ -103,9 +104,9 @@ export function BookingPage(){
               <div>
                 <label>Check-in / Check-out</label>
                 <SelectedDates onClick={() => setOpen((prevState) => !prevState)}>
-                  <RegularText size="s" width="auto">{format(range[0].startDate,"dd MMM yyyy", {locale: ptBR})}</RegularText>
-                  <ArrowRight size={14} color={colors["brand-silver-700"]}/>
-                  <RegularText size="s" width="auto">{format(range[0].endDate, "dd MMM yyyy", {locale: ptBR})}</RegularText>
+                  <RegularText size="s" width="auto">{range[0].startDate && format(range[0].startDate,"dd MMM yyyy", {locale: ptBR})}</RegularText>
+                  <BsArrowRight size={14} color={colors["brand-silver-700"]}/>
+                  <RegularText size="s" width="auto">{range[0].endDate && format(range[0].endDate, "dd MMM yyyy", {locale: ptBR})}</RegularText>
                 </SelectedDates>
               </div>
               {open && !isDesktopSize ? <MobileDateRange range={range} setRange={setRange}/> : ''}
@@ -148,15 +149,15 @@ export function BookingPage(){
         </form>
         <MobileIcons>
           <div>
-            <CheckCircle size={19} color="#518209"/>
+            <AiOutlineCheckCircle size={19} color="#518209"/>
             Melhor Preço
           </div>
           <div>
-            <Lock size={19} color="#518209"/>
+            <AiOutlineLock size={19} color="#518209"/>
             Transação segura
           </div>
           <div>
-            <Timer size={19} color="#518209"/>
+            <AiOutlineClockCircle size={19} color="#518209"/>
             Confirmação imediata
           </div>
         </MobileIcons>
