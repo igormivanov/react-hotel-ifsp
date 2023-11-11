@@ -2,6 +2,7 @@ import { X } from "phosphor-react";
 import { MenuMobileContainer } from "./styles";
 import {useEffect} from 'react'
 import logo from "../../assets/logo.svg"
+import { Link } from "react-router-dom";
 
 interface MenuMobileProps {
   menuIsVisible: boolean;
@@ -26,7 +27,7 @@ export function MenuMobile({ menuIsVisible, setMenuIsVisible}: MenuMobileProps) 
           <li><a href="#gastronomy">Gastronomia</a></li>
           <li><a href="#localization">Localização</a></li>
           <li><a href="#contacts">Contato</a></li>
-          <li><a href="">Login</a></li>
+          <Link to="/login">Login</Link>
         </ul>
       </nav>
     </MenuMobileContainer>

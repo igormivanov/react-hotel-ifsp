@@ -22,11 +22,11 @@ export function Header({ setMenuIsVisible } : HeaderProps){
             <li><a href="#gastronomy">Gastronomia</a></li>
             <li><a href="#localization">Localização</a></li>
             <li><a href="#contacts">Contato</a></li>
-            <li><a href="">Login</a></li>
+            <Link to="/login">Login</Link>
           </HeaderButtonsContainer>
         </nav>
         <div>
-          <Link to="/reservar" >
+          <Link to="/booking" >
             <BookButton>
               Reservar
             </BookButton>

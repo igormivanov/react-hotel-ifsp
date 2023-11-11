@@ -3,13 +3,16 @@ import { Router } from './Router'
 import { GlobalStyle } from './styles/global'
 import { ThemeProvider } from 'styled-components'
 import { defaultTheme } from './styles/themes/default'
+import { BookingContextProvider } from './contexts/BookingContext'
 
 export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <BrowserRouter>
         <GlobalStyle/>
-        <Router/>
+        <BookingContextProvider>
+          <Router/>
+        </BookingContextProvider>
       </BrowserRouter>
     </ThemeProvider>
   )

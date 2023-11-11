@@ -8,6 +8,11 @@ export const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
   }
 
+  :focus{
+    outline: none;
+    /* 1px solid ${({theme}) => theme.colors["brand-gold-200"]}; */
+  }
+
   body {
     font-family: 'Inter', sans-serif;
   }

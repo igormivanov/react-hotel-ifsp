@@ -4,13 +4,16 @@ interface TitleTextProps {
   size?: "xl" | "l" | "m" | "s" | "xs";
   // color?: "title" | "subtitle" | "text";
   weight?: string | number;
+  $textAlign?: string;
 }
 
 interface RegularTextProps {
-  size?:  "l" | "m" | "s" 
+  size?:  "l" | "m" | "s" | "xs"
   // color?: "text" | "subtitle" | "label";
   weight?: string | number;
-  width?: number;
+  width?: 'auto' | number;
+  $textAlign?: string;
+  color?: string;
 }
 
 export const TitleText = styled.h1<TitleTextProps>`
@@ -18,16 +21,16 @@ export const TitleText = styled.h1<TitleTextProps>`
   font-size: ${({theme, size}) => theme.textSizes[`title-title-${size ?? "m"}`]};
   font-family: ${({ theme }) => theme.fonts.regular};
   line-height: 130%;
-  font-weight: ${({ weight }) => weight ?? 400};
-  text-align: center;
+  font-weight: ${({ weight }) => weight};
+  text-align: ${({$textAlign}) => $textAlign ?? 'center'};
 `
 
 export const RegularText = styled.p<RegularTextProps>`
-  color: ${({ theme }) => theme.colors["brand-silver-700"]};
+  color: ${({ theme, color }) => color ?? theme.colors["brand-silver-700"]};
   font-size: ${({theme, size}) => theme.textSizes[`text-regular-${size ?? "l"}`]};
   font-family: ${({ theme }) => theme.fonts.regular};
-  width: ${({width}) => `${width ?? 650}px`};
+  width: ${({width}) => `${typeof width === 'string' ? 'auto' : width === undefined ? '500px' : width + 'px' }`};
   line-height: 130%;
-  font-weight: ${({ weight }) => weight ?? 400};
-  text-align: center;
+  font-weight: ${({ weight }) => weight};
+  text-align: ${({$textAlign}) => $textAlign ?? 'center'};
 `
