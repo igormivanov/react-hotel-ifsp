@@ -80,8 +80,11 @@ export const NavList = styled.nav`
 `
 
 export const FooterCopyright = styled.p`
+  display: flex;
+  align-items: center;
   font-size: 0.8rem;
   padding-bottom: 0.8rem;
+  gap: 0.2rem;
 
   @media (max-width: ${({theme}) => theme.media.mobile}){
     text-align: center;

@@ -34,6 +34,8 @@ export const HeaderContainer = styled.header`
 
     @media (max-width: ${({theme}) => theme.media.mobile}){
       gap: 0rem;
+      justify-content: space-between;
+      padding: 0 1.8rem;
     }
   }
 
@@ -81,6 +83,10 @@ export const BookButton = styled.button`
 
   &:hover {
     background-color: ${({theme}) => theme.colors["brand-gold-300"]};
+  }
+
+  @media(max-width: ${({theme}) => theme.media.mobile}){
+    width: 8rem;
   }
 `
 

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { RegularText } from "../../../../components/Typography";
 import { Contacts, FooterCopyright, FooterContainer, NavList, Social} from "./styles";
 import {AiFillLinkedin, AiOutlineInstagram, AiFillFacebook, AiOutlineCopyrightCircle} from 'react-icons/ai'
@@ -26,10 +27,10 @@ export function Footer() {
             <li><a href="#gastronomy">Gastronomia</a></li>
             <li><a href="#localization">Localização</a></li>
             <li><a href="#contacts">Contato</a></li>
-            <li><a href="">Login</a></li>
+            <Link to="/login">Login</Link>
           </ul>
         </NavList>
-        <FooterCopyright><AiOutlineCopyrightCircle/>2023 - Hotel IFSP - Todos os direitos reservados | Desenvolvido por alunos</FooterCopyright>
+        <FooterCopyright><AiOutlineCopyrightCircle/>2023 - Hotel IFSP - BCC | Desenvolvido por alunos</FooterCopyright>
       </div>
     </FooterContainer>
   )

@@ -1,6 +1,7 @@
 export const defaultTheme = {
   colors: {
     'brand-white': '#FFFFFF',
+    'brand-silver-200': '#F0F0F0',
     'brand-silver-400': '#ECE2D3',
     'brand-silver-600': '#CFCBCA',
     'brand-silver-700': '#656565',

@@ -9,9 +9,8 @@ import videoNatal from '../../../../assets/videos/natal.mp4';
 import videoCasal from '../../../../assets/videos/casal.mp4';
 register();
 
-import { ButtonsGroup, LinkButton, LoveButton, LoveDescription, NatalButton, NatalDescription, SlidersContainer, SpaContainer, SpaDescription} from "./styles"
+import { ButtonsGroup, LoveDescription, LoveLink, NatalDescription, NatalLink, SlidersContainer, SpaContainer, SpaDescription, SpaLink} from "./styles"
 import {Swiper, SwiperSlide} from 'swiper/react'
-import { Link } from 'react-router-dom';
 
 export function Sliders(){
 
@@ -30,10 +29,10 @@ export function Sliders(){
           spaceBetween={50}
           loop
           effect={'fade'}
-          autoplay={{
-            delay: 9000,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 9000,
+          //   disableOnInteraction: false,
+          // }}
         >
           {data.map((item) => {
             return (
@@ -46,12 +45,8 @@ export function Sliders(){
                       <p>com terapias para você relaxar.</p>
                       <p>Venha ter um tempo de bem estar e relaxamento com terapias, serviços e gastronomia especialmente preparadas para você.</p>
                       <ButtonsGroup>
-                        <Link to="/">
-                          <LinkButton>Conhecer Mais</LinkButton>
-                        </Link>
-                        <Link to="/">
-                          <LinkButton>Reservar Agora</LinkButton>
-                        </Link>
+                        <SpaLink to="/">Conhecer Mais</SpaLink>
+                        <SpaLink to="/booking">Reservar Agora</SpaLink>
                       </ButtonsGroup>
                     </SpaDescription>
                   </SpaContainer> 
@@ -62,9 +57,7 @@ export function Sliders(){
                         <h1>Natal em Salto</h1>
                         <p>Vivemos um tempo mágico.</p>
                         <p>Todo o hotel e a cidade respiram o fascínio do natal e te convidamos para viver essa experiência!</p>
-                        <Link to="/">
-                            <NatalButton>Reservar agora</NatalButton>
-                        </Link>
+                        <NatalLink to="/booking">Reservar Agora</NatalLink>
                       </NatalDescription>
                     </div>
 
@@ -76,12 +69,8 @@ export function Sliders(){
                         <p>Te esperamos no WhatsApp para conversar e oferecer as melhores dicas, períodos e tarifas para sua viagem.</p>
                         <p>Aguardamos vocês!</p>
                         <ButtonsGroup>
-                          <Link to="/">
-                            <LoveButton>Conhecer Mais</LoveButton>
-                          </Link>
-                          <Link to="/">
-                            <LoveButton>Reservar Agora</LoveButton>
-                          </Link>
+                          <LoveLink to="/">Conhecer mais</LoveLink>
+                          <LoveLink to="/booking">Reservar Agora</LoveLink>
                         </ButtonsGroup>
                       </LoveDescription>
                     </div>

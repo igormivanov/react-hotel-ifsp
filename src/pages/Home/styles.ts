@@ -14,6 +14,10 @@ export const ButtonBaseStyle = styled.button`
   border-radius: 0.25rem;
   text-transform: uppercase;
   transition: 0.3s ease-in-out;
+
+  a {
+    color: ${({theme}) => theme.colors["brand-silver-700"]};
+  }
 `
 
 

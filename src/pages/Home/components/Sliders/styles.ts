@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ButtonBaseStyle } from "../../styles";
+import { Link } from "react-router-dom";
 
 export const SlidersContainer = styled.section`
   --swiper-theme-color: ${({theme}) => theme.colors["brand-gold-400"]} !important;
@@ -29,17 +29,19 @@ export const SlidersContainer = styled.section`
 
 `
 
-export const LinkButton = styled(ButtonBaseStyle)`
+export const SpaLink = styled(Link)`
   padding: 0.85rem 2.75rem;
   background: ${({theme}) => theme.colors["brand-silver-400"]};
   border: 1px solid ${({theme}) => theme.colors["brand-gold-400"]};
+  cursor: pointer;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  color: ${({theme}) => theme.colors["brand-gold-700"]};
+  font-weight: 600;
 
   &:hover {
     background-color: ${({theme}) => theme.colors["brand-gold-300"]};
-  }
-
-  a {
-    color: ${({theme}) => theme.colors["brand-gold-100"]}
   }
 
   @media (max-width: ${({theme}) => theme.media.mobile}){
@@ -72,6 +74,7 @@ export const SpaDescription = styled.div`
     line-height: 1.25rem;
     font-size: 1.2rem;
     font-weight: 600;
+    color: ${({theme}) => theme.colors["brand-red-500"]};
   }
 
   @media (max-width: ${({theme}) => theme.media.tablet}) {
@@ -85,7 +88,6 @@ export const SpaDescription = styled.div`
 
   @media (max-width: ${({theme}) => theme.media.mobile}){
     background-color: ${({theme}) => theme.colors["brand-silver-400"]};
-    
     width: 100%;
     height: 584px;
     transform: none;
@@ -97,12 +99,12 @@ export const SpaDescription = styled.div`
     text-align: center;
 
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
 
     p:nth-child(2) {
-      font-size: 1.5rem;
-      width: 50%;
+      font-size: 1.4rem;
+      width: 70%;
       margin: 0 auto;
       margin-bottom: 2rem;
     }
@@ -110,7 +112,7 @@ export const SpaDescription = styled.div`
     p:nth-child(3) {
       color: ${({theme}) => theme.colors["brand-silver-700"]};
       font-size: 1rem;
-      width: 50%;
+      width: 70%;
       margin: 0 auto;
       margin-bottom: 2rem;
     }
@@ -193,14 +195,18 @@ export const NatalDescription = styled.div`
   }
 `
 
-export const NatalButton = styled(ButtonBaseStyle)`
+export const NatalLink = styled(Link)`
+  width: 240px;
+  display: inline-block; 
   padding: 0.85rem 2.75rem;
   background: ${({theme}) => theme.colors["brand-gold-400"]};
   border: 3px solid ${({theme}) => theme.colors["brand-gold-400"]};
-
-  a {
-    color: ${({theme}) => theme.colors["brand-gold-100"]};
-  }
+  cursor: pointer;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  color: ${({theme}) => theme.colors["brand-red-700"]};
+ 
 
   &:hover {
     border: 3px solid ${({theme}) => theme.colors["brand-gold-700"]};
@@ -248,7 +254,7 @@ export const LoveDescription = styled.div`
   }
 
   @media (max-width: ${({theme}) => theme.media.mobile}) {
-    width: 65%;
+    width: 80%;
 
     h1 {
       font-size: 1rem;
@@ -270,7 +276,7 @@ export const SpaContainer = styled.div`
   }
   @media (max-width: ${({theme}) => theme.media.tablet}){
     img {
-      filter: brightness(30%);
+      filter: brightness(25%);
     }
   }
 
@@ -281,14 +287,16 @@ export const SpaContainer = styled.div`
   }
 `
 
-export const LoveButton = styled(ButtonBaseStyle)`
+export const LoveLink = styled(Link)`
   padding: 0.85rem 2.75rem;
   background: ${({theme}) => theme.colors["brand-gold-400"]};
   border: 3px solid ${({theme}) => theme.colors["brand-gold-400"]};
-
-  a {
-    color: ${({theme}) => theme.colors["brand-gold-100"]};
-  }
+  cursor: pointer;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  color: ${({theme}) => theme.colors["brand-red-700"]};
+  font-size: 0.8rem;
 
   &:hover {
     border: 3px solid ${({theme}) => theme.colors["brand-gold-700"]};

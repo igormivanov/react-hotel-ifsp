@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const RoomsContainer = styled.section`
@@ -78,31 +79,24 @@ export const RoomCard = styled.div`
     text-transform: uppercase;
     border-radius: 10px 10px 0 0;
   }
+`
 
-  button {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    padding: 0.8rem 1.5rem;
+export const RoomDetailsLink = styled(Link)`
+    margin: 2rem 0;
+    width: 150px;
+    padding: 0.75rem 0;
     text-transform: uppercase;
     border-radius: 0.25rem;
+    font-size: 0.8rem;
     border: 1px solid ${({theme}) => theme.colors["brand-silver-600"]};
     cursor: pointer;
     transition: 0.3s ease-in-out;
     color: ${({theme}) => theme.colors["brand-silver-700"]};
+    text-align: center;
+    background: ${({theme}) => theme.colors["brand-silver-200"]};
 
-  &:hover {
-    border: 1px solid ${({theme}) => theme.colors["brand-gold-400"]};
-    color: ${({theme}) => theme.colors["brand-red-500"]};
-  }
-  }
-
-  /* @media (max-width: ${({theme}) => theme.media.tablet}) {
-
-    flex-direction: row;
-    width: 80%;
-
-    img {
-      width: 60%;
+    &:hover {
+      border: 1px solid ${({theme}) => theme.colors["brand-gold-400"]};
+      color: ${({theme}) => theme.colors["brand-red-500"]};
     }
-  } */
 `
