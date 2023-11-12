@@ -8,4 +8,8 @@ export const MobileDateRangeContainer = styled.div`
   .rdrDateDisplayWrapper{
     display: none;
   }
+
+  .rdrDayToday .rdrDayNumber span:after {
+    background: #C0A16C !important;
+  }
 `

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ConfirmContainer = styled.div`
-  > div {
+  /* div:nth-child(3) {
     width: 100%;
     margin: 3rem 0;
     display: flex;
@@ -9,13 +9,26 @@ export const ConfirmContainer = styled.div`
     gap: 4rem;
     padding: 0 1rem;
     align-items: flex-start;
-  }
+  } */
 
-  @media(max-width: ${({theme}) => theme.media.mobile}){
+  /* @media(max-width: ${({theme}) => theme.media.tablet}){
    div {
     margin-top: 0;
+    align-items: normal;
+    gap: 1rem;
+    justify-content: stretch;
    }
-  }
+  } */
+`
+
+export const MainContent = styled.main`
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 0 1rem;
+    align-items: flex-start;
 `
 
 export const RoomTypeSelection = styled.div`

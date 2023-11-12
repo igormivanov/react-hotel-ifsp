@@ -1,4 +1,4 @@
-import { ConfirmContainer, OrderDetailsMobileStyle, RoomCards, RoomTypeSelection, TopCard} from "./styles";
+import { ConfirmContainer, MainContent, OrderDetailsMobileStyle, RoomCards, RoomTypeSelection, TopCard} from "./styles";
 import { RegularText, TitleText } from "../../../components/Typography";
 import { RoomTypeCard } from "../components/RoomTypeCard";
 
@@ -35,10 +35,8 @@ export function ConfirmPage(){
         </div>
         <button>Reservar Agora</button>
       </OrderDetailsMobileStyle>
-      <OrderDetailsMobile
-        menuIsVisible={menuIsVisible} 
-      />
-      <div className="container">
+      <OrderDetailsMobile menuIsVisible={menuIsVisible}/>
+      <MainContent className="container">
         <RoomTypeSelection>
           <TopCard>
             <Link to="/booking">
@@ -56,7 +54,7 @@ export function ConfirmPage(){
           </RoomCards>
         </RoomTypeSelection>
         <OrderDetails/>
-      </div>
+      </MainContent>
     </ConfirmContainer>
   )
 }

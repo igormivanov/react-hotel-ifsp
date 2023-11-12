@@ -7,7 +7,7 @@ interface MenuMobileContainerProps {
 export const OrderDetailsMobileContainer = styled.div<MenuMobileContainerProps>`
   position: absolute;
   width: 100%;
-  height: 200px;
+  height: 400px;
   top: 8.5rem;
   bottom: 0;
   z-index: 0;
@@ -27,7 +27,39 @@ export const OrderDetailsMobileContainer = styled.div<MenuMobileContainerProps>`
     transform: translateY(0);
   `}
 
+  > div:nth-child(1) {
+    display: flex;
+    justify-content: space-around;
+  }
+
   @media(max-width: ${({theme}) => theme.media.mobile}){
     height: 300px;
   }
+`
+
+export const SelectedDatesMobile = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  div {
+    display: flex;
+    gap: 0.5rem;
+  }
+`
+
+export const SelectedRoomsAndGuestsMobile = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  div {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  span {
+    background: ${({theme}) => theme.colors["brand-gold-100"]}; 
+    padding: 0 0.5rem;
+    border-radius: 50%;
+  }
+
 `

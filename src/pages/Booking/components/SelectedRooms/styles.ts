@@ -3,14 +3,22 @@ import styled from "styled-components";
 export const SelectedRoomsContainer = styled.div`
 
   @media(max-width: ${({theme}) => theme.media.tablet}){
+    /* width: 100%; */
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     padding: 0.5rem;
+    gap: 1rem;
     border-bottom: 1px solid ${({theme}) => theme.colors["brand-gold-100"]};
+  }
+
+  @media(max-width: ${({theme}) => theme.media.mobile}){
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
   }
 `
 
 export const SelectedRoomsCard = styled.div`
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
@@ -55,9 +63,13 @@ export const TrashButton = styled.button`
   border: none;
   cursor: pointer;
 
+  svg {
+    color: ${({theme}) => theme.colors["brand-red-700"]};
+  }
+
   &:hover {
     svg {
-      color: red;
+      color: ${({theme}) => theme.colors["brand-red-400"]};
     }
   }
 `

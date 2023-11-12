@@ -5,6 +5,7 @@ export const defaultTheme = {
     'brand-silver-400': '#ECE2D3',
     'brand-silver-600': '#CFCBCA',
     'brand-silver-700': '#656565',
+    'brand-red-400': '#dd5035',
     'brand-red-500': '#78564D',
     'brand-red-700': '#250D08',
     'brand-gold-100': '#f0e5d5',
