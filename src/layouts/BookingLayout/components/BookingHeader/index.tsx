@@ -19,7 +19,7 @@ export function BookingHeader() {
           <Link to="/login">
             <LoginButton>
               <AiOutlineUser size={16} />
-              A minha conta
+              Minha conta
             </LoginButton>
           </Link>
         </BookingNav>

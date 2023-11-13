@@ -11,10 +11,16 @@ background: ${({theme}) => theme.colors["brand-white"]};
   position: relative;
 
   > div {
-    width: 80%;
+    /* width: 80%; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1.8rem;
+    width: 100%;
+    max-width: 70rem;
+    margin-right: auto;
+    margin-left: auto;
   }
+
+  
 `
