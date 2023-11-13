@@ -5,7 +5,7 @@ export const LoginFormContainer = styled.form`
   width: 22rem;
   display: flex;
   flex-direction: column;
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 1.5rem;
   background: ${({theme}) => theme.colors["brand-white"]};
   border-radius: 4px;
   /* gap: 1.2rem; */
@@ -71,6 +71,7 @@ export const FormButton = styled.button`
   font-size: 1rem;
   background: ${({theme}) => theme.colors["brand-gold-300"]};
   color:  ${({theme}) => theme.colors["brand-red-700"]};
+  border-radius: 4px;
 `
 
 export const ErrorMessage = styled.span`
