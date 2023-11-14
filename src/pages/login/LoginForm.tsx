@@ -1,10 +1,10 @@
 import { ErrorMessage, ForgotPasswordLink, FormButton, InputContainer, LoginFormContainer } from "./styles";
 import {useForm} from 'react-hook-form'
 import {AiOutlineLock, AiOutlineMail} from 'react-icons/ai'
-import { RegularText } from "../../../../components/Typography";
 import { Link } from "react-router-dom";
 import * as z from 'zod'
 import { zodResolver } from "@hookform/resolvers/zod";
+import { RegularText } from "../../components/Typography";
 
 const newLoginFormValidationSchema = z.object({
   email: z.string()
@@ -49,7 +49,7 @@ export function LoginForm(){
       <FormButton type="submit">Iniciar Sessão</FormButton>
       <RegularText width="auto" size="s">
         Não tem uma conta?
-        <Link to="/login">Registre-se</Link>
+        <Link to="/register">Registre-se</Link>
       </RegularText>
     </LoginFormContainer>
   )

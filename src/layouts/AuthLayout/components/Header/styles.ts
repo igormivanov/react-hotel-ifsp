@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const LoginHeaderContainer = styled.header`
-background: ${({theme}) => theme.colors["brand-white"]};
+export const AuthHeaderContainer = styled.header`
+  background: ${({theme}) => theme.colors["brand-white"]};
   width: 100%;
   height: 5rem;
   display: flex;
@@ -11,7 +11,6 @@ background: ${({theme}) => theme.colors["brand-white"]};
   position: relative;
 
   > div {
-    /* width: 80%; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,6 +20,4 @@ background: ${({theme}) => theme.colors["brand-white"]};
     margin-right: auto;
     margin-left: auto;
   }
-
-  
 `

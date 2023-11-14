@@ -5,6 +5,8 @@ import { BookingPage } from "./pages/Booking";
 import { BookingLayout } from "./layouts/BookingLayout";
 import { ConfirmPage } from "./pages/Booking/Confirm";
 import { LoginPage } from "./pages/login";
+import { AuthLayout } from "./layouts/AuthLayout";
+import { RegisterPage } from "./pages/Register";
 
 export function Router(){
   return (
@@ -16,7 +18,10 @@ export function Router(){
         <Route index element={<BookingPage/>}/>
         <Route path="confirm" element={<ConfirmPage/>}/>
       </Route>
-      <Route path="/login" element={<LoginPage/>}/>
+      <Route element={<AuthLayout/>}>
+        <Route path="/login" element={<LoginPage/>}/>
+        <Route path="/register" element={<RegisterPage/>}/>
+      </Route>
     </Routes>
   )
 }
